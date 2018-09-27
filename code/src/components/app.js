@@ -13,7 +13,18 @@ class App extends React.Component {
         </div>
         <div className="product-container">
           {productsJson.products.map(product =>
-            <Product key={product.id} deliveryTime={product.deliveryTime} description={product.description} id={product.id} image={product.image} name={product.name} numberInPack={product.numberInPack} price={product.price} size={product.size} type={product.type} substance={product.substance}  />
+            <Product 
+              key={product.id} 
+              deliveryTime={product.deliveryTime} 
+              description={product.description} 
+              id={product.id} 
+              image={product.image} 
+              name={product.name} 
+              numberInPack={product.numberInPack} 
+              price={product.price} 
+              size={product.size} 
+              type={product.type} 
+              substance={product.substance}  />
           )}
         </div>
       </div>

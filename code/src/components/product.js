@@ -20,8 +20,19 @@ export default class Product extends React.Component {
       <div className="product-box">
         <div className="product-card">
           <div className="product-info-hover-trigger" onMouseOver={() => this.toggleHidden(this)} onMouseLeave={() => this.toggleHidden(this)}></div>
-          {this.state.isHidden && <ProductInfo image={this.props.image} name={this.props.name} numberInPack={this.props.numberInPack} price={this.props.price} size={this.props.size} type={this.props.type} substance={this.props.substance} />}
-          {!this.state.isHidden && <ProductHover description={this.props.description} name={this.props.name} />}
+          {this.state.isHidden && <ProductInfo 
+            image={this.props.image} 
+            name={this.props.name} 
+            numberInPack={this.props.numberInPack} 
+            price={this.props.price} 
+            size={this.props.size} 
+            type={this.props.type} 
+            substance={this.props.substance} />
+          }
+          {!this.state.isHidden && <ProductHover 
+            description={this.props.description} 
+            name={this.props.name} />
+          }
           <div className="product-buy">
             <p>{this.props.price} kr</p>
             <Button action="Köp" name={this.props.name} />
