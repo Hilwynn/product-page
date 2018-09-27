@@ -28,9 +28,10 @@ export default class Product extends React.Component {
             name={this.props.name} 
             numberInPack={this.props.numberInPack} 
             price={this.props.price} 
-            size={this.props.size} 
-            type={this.props.type} 
-            substance={this.props.substance} />
+            size={this.props.size}
+            substance={this.props.substance}
+            type={this.props.type}
+           />
           }
           {!this.state.isHidden && <ProductHover 
             description={this.props.description} 
