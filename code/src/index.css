@@ -54,7 +54,7 @@ li {
 
 .header {
   margin: 0 auto 20px;
-  width: 225px;
+  width: 75%;
 }
 
 .product-container {
@@ -64,7 +64,7 @@ li {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 auto;
-  width: 225px;
+  width: 75%;
 }
 
 .product-box {
@@ -87,7 +87,7 @@ li {
   min-height: 420px;
   padding: 10px;
   position: relative;
-  width: 215px;
+  width: calc(100% - 10px);
 }
 
 .product-info img {
@@ -152,18 +152,19 @@ li {
 
 @media screen and (min-width: 601px) {
   .header, .product-container {
-    width: 450px
+    width: 80%;
   }
   .product-box {
-    width: 50%;
+    width: calc(50% - 10px);
   }
 }
 
 @media screen and (min-width: 901px) {
   .header, .product-container {
-    width: 900px;
+    max-width: 900px;
+    width: 90%;
   }
   .product-box {
-    width: 25%;
+    width: calc(25% - 10px);
   }
 }
