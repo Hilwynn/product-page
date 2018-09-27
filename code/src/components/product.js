@@ -4,17 +4,20 @@ import ProductInfo from "./productinfo"
 import ProductHover from "./producthover"
 
 export default class Product extends React.Component {
+  
   constructor () {
     super()
       this.state = {
         isHidden: true
       }
   }
+  
   toggleHidden () {
     this.setState({
       isHidden: !this.state.isHidden
     })
   }
+  
   render() {
     return (
       <div className="product-box">
@@ -44,9 +47,9 @@ export default class Product extends React.Component {
               <p>Lev. {this.props.deliveryTime}</p>
             </div>
           </div>
-          
         </div>
       </div>
     )
   }
+  
 }

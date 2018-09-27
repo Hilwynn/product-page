@@ -84,7 +84,7 @@ li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 5px;
-  min-height: 420px;
+  height: 420px;
   padding: 10px;
   position: relative;
   width: calc(100% - 10px);
@@ -107,11 +107,11 @@ li {
 
 .product-info-hover-trigger {
   content: "";
-  height: 320px;
+  height: 325px;
   left: 0;
   position: absolute;
   top: 0;
-  width: 215px;
+  width: 270px;
   z-index: 2;
 }
 
@@ -161,10 +161,12 @@ li {
 
 @media screen and (min-width: 901px) {
   .header, .product-container {
-    max-width: 900px;
-    width: 90%;
+    width: 900px;
   }
   .product-box {
     width: calc(25% - 10px);
+  }
+  .product-info-hover-trigger {
+    width: 205px;
   }
 }

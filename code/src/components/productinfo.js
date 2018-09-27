@@ -1,6 +1,7 @@
 import React from "react"
 
 export default class ProductInfo extends React.Component {
+  
   render() {
     return (
       <div className="product-info">
@@ -18,4 +19,5 @@ export default class ProductInfo extends React.Component {
       </div>
     )
   }
+  
 }

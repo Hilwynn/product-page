@@ -1,18 +1,22 @@
 import React from "react"
 
 class ListItem extends React.Component {
+  
   render() {
     return (
       <li>{this.props.item.trim()}</li>
     )
   }
+  
 }
 
 export default class ProductHover extends React.Component {
+  
   makeArray(string) {
     const stringArray = string.split(".")
     return stringArray.filter(String)
   }
+  
   render() {
 
     return (
@@ -27,4 +31,5 @@ export default class ProductHover extends React.Component {
       </div>
     )
   }
+  
 }
